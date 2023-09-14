@@ -1,6 +1,6 @@
 import "./styles/header.css";
 
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -9,16 +9,21 @@ export default function Header() {
         <nav>
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/FrontendPractice-oh.studio/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/profile">Profile</NavLink>
+              <NavLink to="/FrontendPractice-oh.studio/profile">
+                Profile
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/FrontendPractice-oh.studio/contact">
+                Contact
+              </NavLink>
             </li>
           </ul>
         </nav>
+        <Outlet />
       </header>
     </>
   );

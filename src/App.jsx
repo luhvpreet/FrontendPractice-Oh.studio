@@ -21,9 +21,15 @@ function App() {
       <Header />
       <>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/FrontendPractice-oh.studio/" element={<Home />} />
+          <Route
+            path="/FrontendPractice-oh.studio/profile"
+            element={<Profile />}
+          />
+          <Route
+            path="/FrontendPractice-oh.studio/contact"
+            element={<Contact />}
+          />
         </Routes>
       </>
       <Footer />
